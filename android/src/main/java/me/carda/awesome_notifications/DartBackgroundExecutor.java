@@ -71,8 +71,8 @@ public class DartBackgroundExecutor extends BackgroundExecutor implements Method
         return true;
     }
 
-    private static io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback
-            pluginRegistrantCallback;
+    // private static io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback
+    //         pluginRegistrantCallback;
 
     /**
      * Sets the {@code io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback} used to
@@ -82,10 +82,10 @@ public class DartBackgroundExecutor extends BackgroundExecutor implements Method
      * are automatically registered via reflection in the V2 engine embedding API. If not set,
      * background message callbacks will not be able to utilize functionality from other plugins.
      */
-    public static void setPluginRegistrant(
-            io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback callback) {
-        pluginRegistrantCallback = callback;
-    }
+    // public static void setPluginRegistrant(
+    //         io.flutter.plugin.common.PluginRegistry.PluginRegistrantCallback callback) {
+    //     pluginRegistrantCallback = callback;
+    // }
 
     private static void addSilentIntent(Intent intent){
         silentDataQueue.add(intent);
